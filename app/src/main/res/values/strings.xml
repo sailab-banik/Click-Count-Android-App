@@ -3,4 +3,5 @@
 
     <string name="clickBtn">Click</string>
     <string name="countBtn">Count</string>
+    <string name="resetBtn">Reset</string>
 </resources>

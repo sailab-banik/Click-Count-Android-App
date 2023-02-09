@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private TextView countText;
-    private Button clickBtn, countBtn;
+    private Button clickBtn, countBtn, resetBtn;
     private static int counter = 0;
 
     @Override
@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         countText = findViewById(R.id.countText);
         clickBtn = findViewById(R.id.clickBtn);
         countBtn = findViewById(R.id.countBtn);
+        resetBtn = findViewById(R.id.resetBtn);
 
-        countText.setText(""+counter);
+        printCounter();
 
         clickBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,8 +37,20 @@ public class MainActivity extends AppCompatActivity {
         countBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                countText.setText(""+counter);
+                printCounter();
             }
         });
+
+        resetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                counter = 0;
+                printCounter();
+            }
+        });
+    }
+
+    private void printCounter() {
+        countText.setText(""+counter);
     }
 }
