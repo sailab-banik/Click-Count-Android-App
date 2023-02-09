@@ -13,9 +13,9 @@
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.35" />
 
     <Button
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toStartOf="@+id/countBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countText"/>
+        app:layout_constraintTop_toBottomOf="@+id/countText" />
 
     <Button
         android:id="@+id/countBtn"
@@ -54,6 +54,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countText"
         app:layout_constraintVertical_bias="0.4" />
+
+    <ImageButton
+        android:id="@+id/screenRotation"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/ic_baseline_screen_rotation_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/rotateBtn"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

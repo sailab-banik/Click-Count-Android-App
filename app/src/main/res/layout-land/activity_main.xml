@@ -59,5 +59,15 @@
         app:layout_constraintVertical_bias="0.2"
         app:layout_constraintHorizontal_bias="0.1"/>
 
+    <ImageButton
+        android:id="@+id/screenRotation"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_baseline_screen_rotation_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/rotateBtn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
